@@ -1,5 +1,5 @@
-package Animal;
 
+package Animal;
 
 import java.util.Iterator;
 
@@ -54,4 +54,3 @@ public class Cachorro {
 		dog.fome = true;
 	}
 }
-
