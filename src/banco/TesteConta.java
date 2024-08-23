@@ -28,7 +28,7 @@ public class TesteConta {
 	System.out.println(c1.exibirSaldo());
 	System.out.println(c2.exibirSaldo());
 	c1.transferir(100, c2);
-
+	System.out.println(c1.exibirSaldo());
 	System.out.println(c2.exibirSaldo());
 	}
 }
