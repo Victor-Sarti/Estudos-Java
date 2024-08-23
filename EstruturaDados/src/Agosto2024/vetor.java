@@ -18,6 +18,8 @@ public class vetor {
 				
 			}
 			
+			
+			
 		}
 		
 		public int tamanho() {

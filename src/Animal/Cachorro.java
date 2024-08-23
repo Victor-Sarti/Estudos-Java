@@ -1,5 +1,5 @@
-package Animal;
 
+package Animal;
 
 import java.util.Iterator;
 
@@ -8,6 +8,7 @@ public class Cachorro {
 	//Atributos (estados)
 	public String nome, raca;
 	private boolean fome = false;
+	public Tutor tutor;
 
 	// Métodos (comportamento)
 	public void latir(int latindo) {
@@ -54,4 +55,3 @@ public class Cachorro {
 		dog.fome = true;
 	}
 }
-
