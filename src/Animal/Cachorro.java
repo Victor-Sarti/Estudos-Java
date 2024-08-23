@@ -3,10 +3,28 @@ package Animal;
 
 public class Cachorro {
 
-	//Atributos (estados)
+	// Atributos (estados)
 	public String nome, raca;
 	private boolean fome = false;
 	public Tutor tutor;
+
+	// construtores
+	public Cachorro() {
+		this.fome = true;
+	}
+
+	public Cachorro(String nome, String raca) {
+		this.fome = true;
+		this.nome = nome;
+		this.raca = raca;
+	}
+
+	public Cachorro(String nome, String raca, Tutor tutor) {
+		this.fome = true;
+		this.nome = nome;
+		this.raca = raca;
+		this.tutor = tutor;
+	}
 
 	// Métodos (comportamento)
 	public void latir(int latindo) {

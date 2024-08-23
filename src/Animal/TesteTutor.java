@@ -23,6 +23,14 @@ public class TesteTutor {
 		System.out.println(dog1.tutor.nome);
 		System.out.println(dog2.tutor.nome);
 		System.out.println(tutor.nome);
+		
+		// criando dog3 usando os construtores
+		
+		Cachorro dog3 = new Cachorro("Max", "Labrador", tutor);
+		System.out.println(dog3.nome);
+		System.out.println(dog3.raca);
+		System.out.println(tutor.nome);
+		
 	}
 
 }
