@@ -14,15 +14,13 @@ public class Cachorro {
 	}
 
 	public Cachorro(String nome, String raca) {
-		this.fome = true;
+		this();
 		this.nome = nome;
 		this.raca = raca;
 	}
 
 	public Cachorro(String nome, String raca, Tutor tutor) {
-		this.fome = true;
-		this.nome = nome;
-		this.raca = raca;
+		this(nome,raca);
 		this.tutor = tutor;
 	}
 
