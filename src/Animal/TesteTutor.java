@@ -2,6 +2,10 @@ package Animal;
 
 public class TesteTutor {
 	public static void main(String[] args) {
+		//Criando um objeto "anônimo"
+		
+		new Cachorro("Tottó", "Sem raça definida").latir(3);
+		
 		//criando tutor
 		Tutor tutor = new Tutor();
 		tutor.nome = "Juan";
