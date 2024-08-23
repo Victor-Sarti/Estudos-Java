@@ -3,10 +3,12 @@ package banco;
 public class ContaCorrente {
 	public double saldo = 0.00;
 	public double chequeEspecial = 1000;
-	public String titular;
+	public Cliente titular;
 	public String agencia;
 	public String nrConta;
 	public String banco;
+
+
 
 	public void depositar(double valor) {
 		this.saldo += valor;
