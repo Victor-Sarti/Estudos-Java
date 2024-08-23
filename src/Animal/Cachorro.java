@@ -1,8 +1,6 @@
 
 package Animal;
 
-import java.util.Iterator;
-
 public class Cachorro {
 
 	//Atributos (estados)
