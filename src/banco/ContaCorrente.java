@@ -7,6 +7,7 @@ public class ContaCorrente {
 	public String agencia;
 	public String nrConta;
 	public String banco;
+	public String titularConta;
 
 
 
