@@ -42,7 +42,7 @@ public class Contato {
 	
 	@Override
 	public String toString() {
-		return "Contatos{" + "nomes=" + nome + ",telefone=" + telefone + ",email=" + email + '}';
+		return " Contatos{ " + "nomes=" + nome + ", telefone=" + telefone + ", email=" + email + '}';
 	}
 
 }
