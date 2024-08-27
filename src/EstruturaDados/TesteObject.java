@@ -1,6 +1,6 @@
 package EstruturaDados;
 
-public class TesteObejct {
+public class TesteObject {
 	public static void main(String[] args) throws Exception{
 		VetorObjeto vetor = new VetorObjeto(5);
 		
