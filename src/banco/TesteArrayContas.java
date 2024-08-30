@@ -5,8 +5,8 @@ import banco.ContaCorrente;
 
 public class TesteArrayContas {
 	public static void main(String[] args) {
-		Cliente[] cliente = new Cliente [5];
-		ContaCorrente[] contaCorrente = new ContaCorrente [5];
+		Cliente[] cliente = null;
+		ContaCorrente[] contaCorrente = null ;
 		double valor;
 		int opcao, qtd, num, posic;
 		Scanner huf = new Scanner(System.in);
@@ -14,7 +14,7 @@ public class TesteArrayContas {
 		do {
 			System.out.println("Informe a opção desejada");
 			System.out.println("1. Criar conta\n" + "2. Criar clientes\n" + "3. Associar cliente a conta\n"
-					+ "4. Realizar deposito\n " + "5. Realizar transfências\n" + "6. Exibir dados do cliente" + "");
+					+ "4. Realizar deposito\n " + "5. Realizar transfências\n" + "6. Exibir dados do cliente" + "7. Exibir dados da Conta");
 			opcao = huf.nextInt();
 			switch (opcao) {
 			case 1:
