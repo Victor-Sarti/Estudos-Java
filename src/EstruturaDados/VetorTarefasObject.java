@@ -13,7 +13,7 @@ public class VetorTarefasObject {
 	public void adiciona (Object tarefa) throws Exception {
 		this.aumentaCapacidade();
 		this.tarefa[this.qnt] = tarefa;
-		this.qnt++;
+		this.qnt++ ;
 	}
 	
 	
@@ -31,6 +31,7 @@ public class VetorTarefasObject {
 			Object[] tarefaNova = new Object[this.tarefa.length * 2];
 			for (int i = 0; i < this.tarefa.length; i ++) {
 				tarefaNova[i] = this.tarefa[i];
+				
 			}
 			this.tarefa = tarefaNova;
 		}
@@ -49,7 +50,7 @@ public class VetorTarefasObject {
 	}
 	
 	public void remove (int posicao) throws Exception{
-		if (posicao >= 0 && posicao < qnt) {
+		if (posicao >= 1 && posicao < qnt) {
 			for (int i = posicao; i < this.qnt -1; i++) {
 				this.tarefa[i] = this.tarefa[i+1];
 			}
@@ -67,6 +68,14 @@ public class VetorTarefasObject {
         }
         return sb.toString();
     }
+	
+	public enum Acao {
+	    ADICIONAR,
+	    ADICIONAR_INICIO,
+	    BUSCAR,
+	    REMOVER,
+	    LISTAR
+	}
 }
 	
 
