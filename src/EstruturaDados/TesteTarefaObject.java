@@ -1,15 +1,14 @@
 package EstruturaDados;
+
 import javax.swing.JOptionPane;
-
-
 
 public class TesteTarefaObject {
 
     public static void main(String[] args) {
         VetorTarefasObject vetor = new VetorTarefasObject(3);
-        boolean continuar = true;
+        boolean continuar = true; // Inicializa a variável continuar como true
 
-        while (continuar) {
+        do {
             String[] opcoes = {"Adicionar Tarefa", "Adicionar Tarefa no Início", "Buscar Tarefa", "Remover Tarefa", "Listar Tarefas", "Sair"};
             int escolha = JOptionPane.showOptionDialog(null, "Escolha uma opção", "Gerenciador de Tarefas",
                     JOptionPane.DEFAULT_OPTION, JOptionPane.INFORMATION_MESSAGE, null, opcoes, opcoes[0]);
@@ -62,7 +61,8 @@ public class TesteTarefaObject {
                     break;
                 default:
                     JOptionPane.showMessageDialog(null, "Opção inválida.");
+                    // Não muda o valor de continuar, então o loop continua
             }
-        }
+        } while (continuar);
     }
 }
