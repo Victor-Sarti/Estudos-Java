@@ -50,7 +50,7 @@ public class VetorTarefasObject {
 	}
 	
 	public void remove (int posicao) throws Exception{
-		if (posicao >= 1 && posicao < qnt) {
+		if (posicao >= 0 && posicao < qnt) {
 			for (int i = posicao; i < this.qnt -1; i++) {
 				this.tarefa[i] = this.tarefa[i+1];
 			}
