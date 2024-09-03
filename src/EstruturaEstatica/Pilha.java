@@ -13,4 +13,12 @@ public class Pilha<T> extends aula4VetorObject<T> {
 	public void empilha (T elemento) {
 		super.adiciona(elemento);
 	}
+	
+	public T topo() {
+		if(this.estaVazia()) {
+			return null;
+		}else {
+			return this.elementos[tamanho-1];
+		}
+	}
 }
