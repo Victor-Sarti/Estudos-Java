@@ -1,36 +1,33 @@
 package PI;
 
-public class FornecedorPessoa {
+public class FornecedorPessoa extends HerancaFornecedor {
+	private String cpf, rg;
 
-	private String rg;
-	private String cpf;
-	
-	public void FornecedorPessoa() {
-		
+	public String getCpf() {
+		return cpf;
 	}
-	
-	public void FornecedorPessoa(String nome, String fone, String rg, String cpf) {
-		
+
+	public void setCpf(String cpf) {
+		this.cpf = cpf;
 	}
 
 	public String getRg() {
 		return rg;
 	}
 
-	public String getCpf() {
-		return cpf;
-	}
-	
 	public void setRg(String rg) {
 		this.rg = rg;
 	}
 
-
-	public void setCpf(String cpf) {
+	public FornecedorPessoa(String nome, String fone, String cpf, String rg) {
+		super(nome, fone);
 		this.cpf = cpf;
+		this.rg = rg;
 	}
-	
-	
 
+	@Override
+	public String toString() {
+		return "FornecedorPessoa [ Nome = " + super.getNome() + " Fone = " + getFone() + "CPF=" + cpf + ", rg=" + rg
+				+ ", " + "]";
+	}
 }
-
