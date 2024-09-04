@@ -1,6 +1,6 @@
 package PI;
 
-public class FornecedorEmpresa {
+public class FornecedorEmpresa extends HerancaFornecedor {
 
 	private String ie;
 	private String cnpj;
