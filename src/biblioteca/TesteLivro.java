@@ -8,7 +8,7 @@ public static void main(String[] args) {
 	
 	livro.setIsbn("11111111");
 	Calendar dataLancamento = Calendar.getInstance();
-	dataLancamento.set(Calendar.DAY_OF_YEAR,1);
+	dataLancamento.set(Calendar.DAY_OF_MONTH,25);
 	dataLancamento.set(Calendar.MONTH, 0);
 	dataLancamento.set(Calendar.YEAR, 2000);
 	
