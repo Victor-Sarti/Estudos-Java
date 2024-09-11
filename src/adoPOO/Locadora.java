@@ -1,11 +1,10 @@
 package adoPOO;
 
-import java.util.ArrayList;
-import java.util.List;
+	import java.util.ArrayList;
+	import java.util.List;
 
-public class Locadora {
-
-	 private String nome;
+	public class Locadora {
+	    private String nome;
 	    private List<Aluguel> alugueis;
 
 	    public Locadora(String nome) {
@@ -36,5 +35,4 @@ public class Locadora {
 	               ", alugueis=" + alugueis +
 	               '}';
 	    }
-	
-}
+	}
