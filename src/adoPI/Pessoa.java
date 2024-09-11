@@ -1,5 +1,5 @@
-package ADOsPI;
-
+package adoPI;
+ //VICTOR GABRIEL SARTI MIRANDA 
 public class Pessoa {
 
 	private String sexo;

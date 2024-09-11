@@ -1,4 +1,4 @@
-package PI;
+package pi;
 
 public class FornecedorEmpresa extends HerancaFornecedor{
 	private String ie, cnpj;

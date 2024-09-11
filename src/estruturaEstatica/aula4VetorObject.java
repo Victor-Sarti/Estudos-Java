@@ -1,4 +1,4 @@
-package EstruturaEstatica;
+package estruturaEstatica;
 
 public class aula4VetorObject<T> {
 

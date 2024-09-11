@@ -1,4 +1,4 @@
-package Animal;
+package animal;
 
 public class TesteAnimais {
 	public static void main(String[] args) {

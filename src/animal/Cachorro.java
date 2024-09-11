@@ -1,5 +1,5 @@
 
-package Animal;
+package animal;
 
 public class Cachorro {
 

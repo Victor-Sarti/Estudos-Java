@@ -1,4 +1,4 @@
-package EstruturaDados;
+package estruturaDados;
 
 public class TesteObject {
 	public static void main(String[] args) throws Exception{

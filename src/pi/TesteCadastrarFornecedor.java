@@ -1,4 +1,4 @@
-package PI;
+package pi;
 
 import javax.swing.JOptionPane;
 

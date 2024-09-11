@@ -1,4 +1,4 @@
-package PI;
+package pi;
 
 public class FornecedorPessoa extends HerancaFornecedor {
 	private String cpf, rg;

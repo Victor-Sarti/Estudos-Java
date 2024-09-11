@@ -1,4 +1,4 @@
-package Animal;
+package animal;
 
 public class TesteVetorAnimal {
 	public static void main(String[] args) {

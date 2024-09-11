@@ -1,4 +1,4 @@
-package EstruturaDados;
+package estruturaDados;
 
 public class VetorObjeto {
 	// Listar Atributos

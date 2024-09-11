@@ -1,4 +1,4 @@
-package PI;
+package pi;
 
 public class HerancaFornecedor {
 	private String nome, fone;

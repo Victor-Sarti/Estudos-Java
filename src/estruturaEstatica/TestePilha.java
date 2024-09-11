@@ -1,4 +1,4 @@
-package EstruturaEstatica;
+package estruturaEstatica;
 
 public class TestePilha {
 	public static void main(String[] args) {
