@@ -1,5 +1,7 @@
 package heranca;
 
+import java.util.Objects;
+
 public class Funcionario {
 	private String matricula;
 	private String nome;
@@ -40,5 +42,22 @@ public class Funcionario {
 
 	public void setRg(String rg) {
 		this.rg = rg;
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(matricula);
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Funcionario other = (Funcionario) obj;
+		return Objects.equals(matricula, other.matricula);
 	}
 }
