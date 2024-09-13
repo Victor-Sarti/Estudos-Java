@@ -5,6 +5,10 @@ public class Funcionario {
 	private String nome;
 	private double salario;
 	private String rg;
+	
+	public Funcionario() {
+		System.out.println("Passou pelo funcionario");
+	}
 
 	public String getMatricula() {
 		return matricula;
