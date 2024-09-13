@@ -2,10 +2,10 @@ package heranca;
 
 public class TesteFuncionario {
 	public static void main(String[] args) {
-		Funcionario contador = new Contador();
-		Funcionario engenheiro = new Engenheiro();
-		Contador cont = (Contador) contador;
-		cont.setNumCrc("1234");
-		((Contador) contador).setNumCrc(null);
+		Funcionario f1 = new Engenheiro();
+		Funcionario f2 = new Engenheiro();
+		f1.setMatricula("1234");
+		f2.setMatricula("1234");
+		System.out.println(f1 == f2);
 	}
 }
