@@ -1,6 +1,11 @@
 package heranca;
 
-public class Engenheiro extends Funcionario{
+public class Engenheiro extends Funcionario {
+
+	
+	public Engenheiro() {
+		System.out.println("Passou pelo engenheiro");
+	}
 	private String numCrc;
 
 	public String getNumCrc() {
@@ -10,6 +15,5 @@ public class Engenheiro extends Funcionario{
 	public void setNumCrc(String numCrc) {
 		this.numCrc = numCrc;
 	}
-	
 
 }
