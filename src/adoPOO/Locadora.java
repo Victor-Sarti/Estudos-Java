@@ -1,5 +1,6 @@
 package adoPOO;
-
+//VICTOR GABRIEL SARTI MIRANDA 
+// JUAN MAICON ANDRADE SANTOS 
 	import java.util.ArrayList;
 	import java.util.List;
 

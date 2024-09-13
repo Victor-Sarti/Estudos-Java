@@ -1,5 +1,6 @@
 package adoPOO;
-
+//VICTOR GABRIEL SARTI MIRANDA 
+// JUAN MAICON ANDRADE SANTOS 
 public class Pessoas {
 	   private String nome;
 	    private String cpf;

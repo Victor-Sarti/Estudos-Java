@@ -1,5 +1,6 @@
 package adoPOO;
-
+//VICTOR GABRIEL SARTI MIRANDA 
+// JUAN MAICON ANDRADE SANTOS 
 public class TesteLocadora {
 
     public static void main(String[] args) {
