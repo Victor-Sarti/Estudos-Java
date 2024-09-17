@@ -7,16 +7,14 @@ public class TesteFila {
 		fila.enfileirar(2);
 		fila.enfileirar(3);
 	
-		// espiar a fila 
-		System.out.println(fila.espiar());
-		// para mascarar e deixar a respostas mais bonita
+		// vamos vizualizar a fila  
+		System.out.println(fila.tamanho());
+		// desenfila
+		System.out.println(fila.desenfila());
 		
-		if(fila.espiar() == null) {
-			System.out.println("Ninguem na Fila");
-		}else {
-			System.out.println("O elemento da primeira poição é " + fila.espiar());
-		}
+		System.out.println(fila.toString());
 		
+	
 	
 	}
 	
