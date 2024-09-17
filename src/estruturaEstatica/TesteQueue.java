@@ -15,6 +15,8 @@ public class TesteQueue {
 		System.out.println("Tamanho da Fila: " + fila.size());
 		System.out.println("Dados da Fila: " + fila.toString());
 		System.out.println(fila.peek());
+		System.out.println(fila.remove(1));
+		System.out.println(fila.toString());
 		
 	
 	}
