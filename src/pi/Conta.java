@@ -19,6 +19,17 @@ public class Conta {
 		}
 	}
 	
+	public boolean transferir(Conta contaDestino, double valor) {
+		if(this.saldo + this.limite >= valor) {
+			this.saldo -= valor;
+			contaDestino.depositar(valor);
+			return true;
+		}else {
+			System.out.println("Saldo Insuficiente !" + "Saque não realizado!");
+			return false;
+		}
+	}
+	
 	public int getNumero() {
 		return numero;
 	}
