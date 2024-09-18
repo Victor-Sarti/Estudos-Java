@@ -80,9 +80,27 @@ public class Conta {
 	}
 
 
+	public void pagarConta(Conta origem, double valor,
+			String documento) {
+		if(origem.sacar(valor)) {
+			System.out.println("Pagamento do documento: " + documento 
+					+ " realizado com sucesso!!!");
+		}
+		else 
+			System.out.println("Pagamento do documento: " + documento 
+					+ " NÃO foi realizado!!!");
+	}
+
+	public void pagarConta(String documento, double valor) {
+		if(this.sacar(valor)) {
+			System.out.println("Pagamento do documento: " + documento 
+					+ " realizado com sucesso!!!");
+		}
+		else 
+			System.out.println("Pagamento do documento: " + documento 
+					+ " NÃO foi realizado!!!");
 	
 	
-	
-	
+	}
 	
 }
