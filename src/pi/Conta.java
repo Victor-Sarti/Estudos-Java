@@ -8,15 +8,16 @@ public class Conta {
 	
 
 	public boolean sacar(double valor) {
-		if(saldo + limite > valor) {
+		if(saldo+limite>valor) {
 			saldo -= valor;
 			return true;
-		}else {
-			System.out.println("Saldo Insuficiente");
+		}
+		else {
+			System.out.print("Saldo Insuficiente! "
+				+ "Saque não realizado!");			
 			return false;
 		}
 	}
-	
 	
 	public int getNumero() {
 		return numero;
