@@ -1,6 +1,6 @@
 package abstrato;
 
-public class ContaBancaria {
+public abstract class ContaBancaria {
 	private String agencia, numero;
 	private double saldo;
 
@@ -31,6 +31,12 @@ public class ContaBancaria {
 	//criando os metodos
 	
 	public abstract void sacar (double valor);
+//	public abstract boolean VerificarSaldo(double valor);
+//	public void sacar(double valor) { //metodo sacar sem ser no abstrato
+//		if(VerificarSaldo(valor)) {
+//			this.saldo -= valor;
+//		}
+//	}
 	
 	public void depositar(double valor) {
 		this.saldo += valor;
