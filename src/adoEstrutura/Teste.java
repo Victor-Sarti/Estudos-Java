@@ -1,5 +1,5 @@
 
-package ado2PI;
+package adoEstrutura;
 import java.util.Scanner;
 public class Teste {
  

@@ -1,4 +1,4 @@
-package adoEstruraII;
+package adoEstrutura;
  
 public class Fila<T> {
  
@@ -191,5 +191,6 @@ filaComum = novaFila;
  
 }
  
+}
 }
  

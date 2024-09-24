@@ -1,4 +1,4 @@
-package ado2PI;
+package adoEstrutura;
 public class Paciente {
  
  
