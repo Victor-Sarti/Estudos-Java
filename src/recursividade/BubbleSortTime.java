@@ -2,8 +2,11 @@ package recursividade;
 
 public class BubbleSortTime {
 	public static void main(String[] args) {
-		int[] vetor = new int[1000];
-
+		int[] vetor = new int[10000];
+				//tempo de execucao 100int = 0s
+				//tempo de execucao 1000int = 4s
+				//tempo de execucao 100int = 160s
+			
 		for (int i = 0; i < vetor.length; i++) {
 			vetor[i] = (int) (Math.random() * vetor.length);
 			// metodos de ordenacao BublleSort
