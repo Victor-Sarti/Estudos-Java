@@ -3,7 +3,10 @@ package recursividade;
 public class InsertionSort {
 	public static void main(String[] args) {
 		// criando vetor int com 10 posicoes
-		int[] vetor = new int[10];
+		int[] vetor = new int[100];
+	
+		
+		
 		// inserindo valores no vetor
 		for (int i = 0; i < vetor.length; i++) {
 			vetor[i] = (int) (Math.random() * vetor.length);
