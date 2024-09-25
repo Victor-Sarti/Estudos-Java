@@ -21,7 +21,7 @@ public class TesteJFrame extends  JFrame {
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		centralizar();
-		nome = criarJLabel("nome");
+		nome = criarJLabel("nome", 10,10,270,50);
 	}
 	public static void main(String[] args) {
 		new TesteJFrame();
@@ -43,11 +43,11 @@ public class TesteJFrame extends  JFrame {
 				(screen.height - janela.height)/2);
 	}
 	
-	public JLabel criarJLabel(String string){
+	public JLabel criarJLabel(String string, int desq, int dtop, int larg, int alt){
 		JLabel jl = new JLabel(string);
 		jl.setText("JLabel inserindo");
-		jl.setLocation(10, 10); //distancia esq e top
-		jl.setSize(370,50); // larg e alt do rotulo 
+		jl.setLocation(desq, dtop); //distancia esq e top
+		jl.setSize(larg,alt); // larg e alt do rotulo 
 		//TORNA OPCAO O FUNDO DO ROTULO 
 		jl.setOpaque(true); // fundo opcao 
 		jl.setBackground(new Color(255,255,255)); //cor fundo
