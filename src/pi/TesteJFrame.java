@@ -16,7 +16,7 @@ public class TesteJFrame extends  JFrame {
 		setSize(375,100);
 		getContentPane().setLayout(null);//anula o layout
 		//cor de fundo da janela no padrao RGB 
-		getContentPane().setBackground(new Color(96,96,96));
+		getContentPane().setBackground(new Color(0,0,0));
 		setVisible(true);//exibindo a janela 
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -50,9 +50,9 @@ public class TesteJFrame extends  JFrame {
 		jl.setSize(larg,alt); // larg e alt do rotulo 
 		//TORNA OPCAO O FUNDO DO ROTULO 
 		jl.setOpaque(true); // fundo opcao 
-		jl.setBackground(new Color(96,96,96)); //cor fundo
-		jl.setForeground(new Color(0,0,0)); //cor fonte 
-		jl.setFont(new Font ("Courier new", Font.BOLD, 18)); //nome, estilo e tamanho da fonte
+		jl.setBackground(new Color(0,0,0)); //cor fundo
+		jl.setForeground(new Color(255,255,255)); //cor fonte 
+		jl.setFont(new Font ("Courier new", Font.BOLD, 20)); //nome, estilo e tamanho da fonte
 		jl.setToolTipText("JLabel Exemplo"); // dica de texto 
 		jl.setHorizontalAlignment(SwingConstants.LEFT); //alinhamento horizontal 
 		jl.setVerticalAlignment(SwingConstants.TOP); //alinhamento vertical
