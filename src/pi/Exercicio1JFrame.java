@@ -11,34 +11,38 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-public class TesteJFrame extends  JFrame {
+public class Exercicio1JFrame extends JFrame {
 	JLabel nome;
 	JTextField txtNome;
-	public TesteJFrame() {
-		setTitle("Primeira Janela Swing");//titulo da janela 
-		setSize(375,200);
-		getContentPane().setLayout(null);//anula o layout
-		//cor de fundo da janela no padrao RGB 
-		getContentPane().setBackground(new Color(0,0,0));
-		txtNome = criarTexto(10,50,270,25);
-		setVisible(true);//exibindo a janela 
-		//provoca o termino da execucao
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	public Exercicio1JFrame() {
+		String titulo = JOptionPane.showInputDialog("Titulo: ");
+		setTitle(titulo); 
+		int larg = Integer.parseInt(JOptionPane.showInputDialog("Largura: "));
+		int alt = Integer.parseInt(JOptionPane.showInputDialog("Altura: "));
+		setSize(larg,alt);
+		setLayout(null);
+		int r = Integer.parseInt(JOptionPane.showInputDialog("Vermelho de 0 a 255: "));
+		int g = Integer.parseInt(JOptionPane.showInputDialog("Verde de 0 a 255: "));
+		int b = Integer.parseInt(JOptionPane.showInputDialog("Azul de 0 a 255: "));
+		getContentPane().setBackground(new Color(r,g,b));
+		nome = criarJLabel("Nome", 10, 10, 270, 40);
+		txtNome = criarTexto(10, 50, 270, 40);
 		centralizar();
-		nome = criarJLabel("nome", 10,10,270,50);
-	
-		
+		setVisible(true);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 	}
+	
+	
 	private JTextField criarTexto(int desq, int dtopo, int larg, int alt) {
 		JTextField jt = new JTextField();
 		jt.setBounds(desq, dtopo, larg, alt);
-		jt.setText("AMADA POR POUCOS\n ODIADA POR MUITOS");
+		jt.setText(" ");
 		jt.setHorizontalAlignment(JTextField.CENTER);
 		add(jt);
 		return jt;
 	}
 	public static void main(String[] args) {
-		new TesteJFrame();
+		new Exercicio1JFrame();
 	}
 	
 	
@@ -76,7 +80,4 @@ public class TesteJFrame extends  JFrame {
 		return jl;
 		
 	}
-	
-	
-
 }
