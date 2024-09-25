@@ -65,7 +65,7 @@ public class Exercicio1JFrame extends JFrame {
 	
 	public JLabel criarJLabel(String string, int desq, int dtop, int larg, int alt){
 		JLabel jl = new JLabel(string);
-		jl.setText("TORCIDA JOVEM SANTOS");
+		jl.setText(" ");
 		jl.setLocation(desq, dtop); //distancia esq e top
 		jl.setSize(larg,alt); // larg e alt do rotulo 
 		//TORNA OPCAO O FUNDO DO ROTULO 
