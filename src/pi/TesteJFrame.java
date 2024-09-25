@@ -2,11 +2,15 @@ package pi;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Toolkit;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.SwingConstants;
 
 public class TesteJFrame extends  JFrame {
+	JLabel nome;
 	public TesteJFrame() {
 		setTitle("Primeira Janela Swing");//titulo da janela 
 		setSize(375,100);
@@ -17,7 +21,7 @@ public class TesteJFrame extends  JFrame {
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		centralizar();
-		
+		nome = criarJLabel();
 	}
 	public static void main(String[] args) {
 		new TesteJFrame();
@@ -37,6 +41,24 @@ public class TesteJFrame extends  JFrame {
 		
 		setLocation((screen.width - janela.width)/2,
 				(screen.height - janela.height)/2);
+	}
+	
+	public JLabel criarJLabel(){
+		JLabel jl = new JLabel();
+		jl.setText("JLabel inserindo");
+		jl.setLocation(10, 10); //distancia esq e top
+		jl.setSize(370,50); // larg e alt do rotulo 
+		//TORNA OPCAO O FUNDO DO ROTULO 
+		jl.setOpaque(true); // fundo opcao 
+		jl.setBackground(new Color(255,255,255)); //cor fundo
+		jl.setForeground(new Color(0,0,0)); //cor fonte 
+		jl.setFont(new Font ("Courier new", Font.BOLD, 12)); //nome, estilo e tamanho da fonte
+		jl.setToolTipText("JLabel Exemplo"); // dica de texto 
+		jl.setHorizontalAlignment(SwingConstants.LEFT); //alinhamento horizontal 
+		jl.setVerticalAlignment(SwingConstants.TOP); //alinhamento vertical
+		add(jl);
+		return jl;
+		
 	}
 
 }
