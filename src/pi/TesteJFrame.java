@@ -45,14 +45,14 @@ public class TesteJFrame extends  JFrame {
 	
 	public JLabel criarJLabel(String string, int desq, int dtop, int larg, int alt){
 		JLabel jl = new JLabel(string);
-		jl.setText("JLabel inserindo");
+		jl.setText("TORCIDA JOVEM SANTOS");
 		jl.setLocation(desq, dtop); //distancia esq e top
 		jl.setSize(larg,alt); // larg e alt do rotulo 
 		//TORNA OPCAO O FUNDO DO ROTULO 
 		jl.setOpaque(true); // fundo opcao 
 		jl.setBackground(new Color(96,96,96)); //cor fundo
 		jl.setForeground(new Color(0,0,0)); //cor fonte 
-		jl.setFont(new Font ("Courier new", Font.BOLD, 12)); //nome, estilo e tamanho da fonte
+		jl.setFont(new Font ("Courier new", Font.BOLD, 18)); //nome, estilo e tamanho da fonte
 		jl.setToolTipText("JLabel Exemplo"); // dica de texto 
 		jl.setHorizontalAlignment(SwingConstants.LEFT); //alinhamento horizontal 
 		jl.setVerticalAlignment(SwingConstants.TOP); //alinhamento vertical
