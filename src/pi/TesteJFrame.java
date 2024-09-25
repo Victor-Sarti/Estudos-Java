@@ -50,7 +50,7 @@ public class TesteJFrame extends  JFrame {
 		jl.setSize(larg,alt); // larg e alt do rotulo 
 		//TORNA OPCAO O FUNDO DO ROTULO 
 		jl.setOpaque(true); // fundo opcao 
-		jl.setBackground(new Color(255,255,255)); //cor fundo
+		jl.setBackground(new Color(96,96,96)); //cor fundo
 		jl.setForeground(new Color(0,0,0)); //cor fonte 
 		jl.setFont(new Font ("Courier new", Font.BOLD, 12)); //nome, estilo e tamanho da fonte
 		jl.setToolTipText("JLabel Exemplo"); // dica de texto 
