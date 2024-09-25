@@ -21,7 +21,7 @@ public class TesteJFrame extends  JFrame {
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		centralizar();
-		nome = criarJLabel();
+		nome = criarJLabel("nome");
 	}
 	public static void main(String[] args) {
 		new TesteJFrame();
@@ -43,8 +43,8 @@ public class TesteJFrame extends  JFrame {
 				(screen.height - janela.height)/2);
 	}
 	
-	public JLabel criarJLabel(){
-		JLabel jl = new JLabel();
+	public JLabel criarJLabel(String string){
+		JLabel jl = new JLabel(string);
 		jl.setText("JLabel inserindo");
 		jl.setLocation(10, 10); //distancia esq e top
 		jl.setSize(370,50); // larg e alt do rotulo 
