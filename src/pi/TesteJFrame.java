@@ -7,21 +7,33 @@ import java.awt.Toolkit;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
 public class TesteJFrame extends  JFrame {
 	JLabel nome;
+	JTextField txtNome;
 	public TesteJFrame() {
 		setTitle("Primeira Janela Swing");//titulo da janela 
-		setSize(375,100);
+		setSize(375,200);
 		getContentPane().setLayout(null);//anula o layout
 		//cor de fundo da janela no padrao RGB 
 		getContentPane().setBackground(new Color(0,0,0));
+		txtNome = criarTexto(10,50,270,25);
 		setVisible(true);//exibindo a janela 
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		centralizar();
 		nome = criarJLabel("nome", 10,10,270,50);
+		
+	}
+	private JTextField criarTexto(int desq, int dtopo, int larg, int alt) {
+		JTextField jt = new JTextField();
+		jt.setBounds(desq, dtopo, larg, alt);
+		jt.setText("AMADA POR POUCOS\n ODIADA POR MUITOS");
+		jt.setHorizontalAlignment(JTextField.CENTER);
+		add(jt);
+		return jt;
 	}
 	public static void main(String[] args) {
 		new TesteJFrame();
