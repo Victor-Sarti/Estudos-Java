@@ -11,8 +11,8 @@ public class TesteJFrame extends  JFrame {
 		setTitle("Primeira Janela Swing");//titulo da janela 
 		setSize(375,100);
 		getContentPane().setLayout(null);//anula o layout
-		//cpr de fundo da janela no padrao RGB 
-		getContentPane().setBackground(new Color(255,255,255));
+		//cor de fundo da janela no padrao RGB 
+		getContentPane().setBackground(new Color(96,96,96));
 		setVisible(true);//exibindo a janela 
 		//provoca o termino da execucao
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
