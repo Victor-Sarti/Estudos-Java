@@ -11,7 +11,11 @@ public class TesteArquivos {
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}catch(IOException  e) {
-			
+			// aqui trata IOExcption
+		}catch(Exception e) {
+			//aqui trata Execption no geral
+		}finally {
+			System.out.println("Passou  no Finally");
 		}
 		System.out.println("Continua executando");
 	}
