@@ -1,11 +1,10 @@
 package exception;
 
 public class TesteMatematica {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws NumeroInvalidoException {
 		try {
-			int valor = Matematica.gerarNumero(999);
-			System.out.println(valor);
-		}catch (Exception e ){
+			int retorno;
+		}catch (NumeroInvalidoException e ){
 			e.printStackTrace();
 			System.out.println(e.getMessage());
 		}
