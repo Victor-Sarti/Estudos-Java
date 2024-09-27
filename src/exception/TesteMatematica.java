@@ -3,7 +3,7 @@ package exception;
 public class TesteMatematica {
 	public static void main(String[] args) {
 		try {
-			int valor = Matematica.gerarNumero(99);
+			int valor = Matematica.gerarNumero(999);
 			System.out.println(valor);
 		}catch (Exception e ){
 			e.printStackTrace();
