@@ -1,26 +1,28 @@
 package lista;
 
+import java.util.LinkedList;
+
 public class Lista {
 	public static void main(String[] args) {
-			ListaEncadeada<String> lista = new ListaEncadeada <>();
+			LinkedList<String> lista = new LinkedList <String>();
 			
-			System.out.println("Tamanho da Lista = " +lista.getTamanho());
-			
-			lista.adiciona("Juan");
-			lista.adiciona("Guilherme");
-			lista.adiciona("Fernando");
-			lista.adiciona("Victor");
+		
+			lista.add("Juan");
+			lista.add("Guilherme");
+			lista.add("Fernando");
+			lista.add("Victor");
 			
 			System.out.println(lista);
-			System.out.println("\nTamanho da Lista = " + lista.getTamanho());
-			System.out.println("\nInicio da Lista = " + lista.getInicio().getElemento());
-			System.out.println("\nFim da Lista = " + lista.getFim().getElemento());
-			
-			lista.remover("Victor");
+			System.out.println("\nTamanho da Lista = " + lista.size());
+			System.out.println("\nInicio da Lista = " + lista.getFirst());
+			System.out.println("\nFim da Lista = " + lista.getLast());
+			System.out.println("\nBuscar informação na 2º posição da lista = " + lista.get(2));
+			System.out.println("\nBuscar o nome Victor na lista = " + lista.contains("Victor"));
+			lista.remove(2);
+			lista.remove("Juan");
 			System.out.println(lista);
-			System.out.println("\nTamanho da Lista = " + lista.getTamanho());
-			System.out.println("\nInicio da Lista = " + lista.getInicio().getElemento());
-			System.out.println("\nFim da Lista = " + lista.getFim().getElemento());
+			System.out.println("\nTamanho da Lista = " + lista.size());
+
 	}
 
 }
