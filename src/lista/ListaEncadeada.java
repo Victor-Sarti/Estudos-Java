@@ -40,4 +40,18 @@ public class ListaEncadeada<Tipo> {
 	public String toString() {
 		return "ListaEncadeada [inicio=" + inicio + "]";
 	}
+	
+	//metodo para adicionar o elemento 
+	
+	public void adiciona(Tipo elemento) {
+		No<Tipo> celula = new No<Tipo>(elemento);
+		if(this.inicio == null && this.fim == null) {
+			this.inicio = celula;
+			this.fim = celula;
+		}else {
+			this.fim.setProximo(celula);
+			this.fim = celula;
+		}
+		this.tamanho++;
+	}
 }
