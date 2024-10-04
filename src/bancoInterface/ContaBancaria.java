@@ -22,5 +22,11 @@ public class ContaBancaria implements OperacoesBancarias, ValidacaoDeSaldo{
 	public double consultarSaldo () {
 		return saldo;
 	}
+	
+	@Override
+	public void transferir (double saldo, OperacoesBancarias destino) {
+	this.sacar(saldo);
+	destino.depositar(saldo);
+	}
 
 }
