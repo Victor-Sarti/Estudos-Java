@@ -8,6 +8,14 @@ public class ContaBancaria implements OperacoesBancarias {
 		this.saldo -= valor;
 	}
 	
+	@Override
+	public void depositar (double valor) {
+		this.saldo += valor;
+	}
 	
+	@Override
+	public double consultarSaldo () {
+		return saldo;
+	}
 
 }
