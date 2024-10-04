@@ -29,6 +29,13 @@ public class MeuFrame extends JFrame implements ActionListener {
 				
 			}
 		});
+		
+		// criando a mesma class anonima mas resumida 
+		meuBotao.addActionListener(e -> {
+			System.out.println("Clique no Botão 4° vez ");
+		});
+
+		
 
 		
 		//frame
