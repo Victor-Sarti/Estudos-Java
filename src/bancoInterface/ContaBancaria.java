@@ -1,7 +1,12 @@
 package bancoInterface;
 
-public class ContaBancaria implements OperacoesBancarias {
+public class ContaBancaria implements OperacoesBancarias, ValidacaoDeSaldo{
 	public double saldo;
+	
+	@Override
+	public boolean validar (double valor) {
+		return saldo >=  valor;
+	}
 	
 	@Override
 	public void sacar (double valor) {
