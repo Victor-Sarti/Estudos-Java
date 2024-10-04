@@ -2,7 +2,7 @@ package bancoInterface;
 
 public class ContaBancaria implements OperacoesBancarias, ValidacaoDeSaldo{
 	public double saldo;
-	
+	String a;
 	@Override
 	public boolean validar (double valor) {
 		return saldo >=  valor;
