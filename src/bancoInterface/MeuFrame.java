@@ -19,6 +19,17 @@ public class MeuFrame extends JFrame implements ActionListener {
 		meuBotao.addActionListener(this);
 		MeuActionListener listener = new MeuActionListener();
 		meuBotao.addActionListener(listener);
+		//botao caso eu nn queira reaproveitar ele para outra classe
+		//criando uma classe anonima 
+		meuBotao.addActionListener(new ActionListener() {
+			
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				System.out.println("Clique no Botão 3° vez ");
+				
+			}
+		});
+
 		
 		//frame
 		getContentPane().setLayout(null);
@@ -42,7 +53,7 @@ public class MeuFrame extends JFrame implements ActionListener {
 	class MeuActionListener implements ActionListener{
 		@Override
 		public void actionPerformed(ActionEvent e) {
-			System.out.println("Clique no Botão");
+			System.out.println("Clique no Botão 2° vez");
 		}
 	}
 	
