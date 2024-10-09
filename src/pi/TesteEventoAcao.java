@@ -22,6 +22,7 @@ public class TesteEventoAcao extends JFrame implements ActionListener{
 		b2 = criarBotao("Sair", 120, 10, 100, 30);
 		setVisible(true);
 	}
+	//action
 	public void actionPerformed(ActionEvent e){
 		if (e.getSource() == b1)
 		l1.setText("Botão gravar pressionado " + ++i1 + " vez(es)");
@@ -31,6 +32,7 @@ public class TesteEventoAcao extends JFrame implements ActionListener{
 	public static void main(String [] args){
 	 new TesteEventoAcao();
   }
+	// criar botoes 
 	private JButton criarBotao(String texto, int esq, int topo, int larg, int alt) {
 		JButton botao = new JButton(texto);
 		botao.addActionListener(this);
