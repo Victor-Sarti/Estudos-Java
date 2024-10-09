@@ -10,7 +10,7 @@ public class TesteGridLayout extends JFrame {
 		getContentPane().setBackground(new Color(180, 189, 255));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
-		GridLayout gl = new GridLayout(3, 2, 0, 0);
+		GridLayout gl = new GridLayout(3, 2, 10, 10);
 		getContentPane().setLayout(gl);
 		JButton b1 = criarBotao("Linha 1 - Coluna 1");
 		JButton b2 = criarBotao("Linha 1 - Coluna 2");
