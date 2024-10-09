@@ -6,7 +6,7 @@ import javax.swing.*;
 public class ExFlowLayout extends JFrame
 {
 	private JButton botao1, botao2, botao3, botao4,
-	botao5;
+	botao5, botao6;
 
 	private Container c; //criação do objeto tipo Container
 
@@ -22,6 +22,7 @@ public class ExFlowLayout extends JFrame
 		botao3 = criarBotao("Botão 3", '3');
 		botao4 = criarBotao("Botão 4", '4');
 		botao5 = criarBotao("Botão 5", '5');
+		botao6 = criarBotao("Botão 6", '6');
 
 		//criação dos botões
 		c.add(botao1);
@@ -29,12 +30,14 @@ public class ExFlowLayout extends JFrame
 		c.add(botao3);
 		c.add(botao4);
 		c.add(botao5);
+		c.add(botao6);
 		//criação dos botões
 		c.add(botao1);
 		c.add(botao2);
 		c.add(botao3);
 		c.add(botao4);
 		c.add(botao5);
+		c.add(botao6);
 		setSize(350, 120);
 		setVisible(true);
 		setLocationRelativeTo(null);
