@@ -7,7 +7,7 @@ public class TesteGridLayout extends JFrame {
 	public TesteGridLayout() {
 		setTitle("Teste GridLayout");
 		setSize(300, 150);
-		getContentPane().setBackground(new Color(180, 189, 255));
+		getContentPane().setBackground(new Color(0, 0, 0));
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setLocationRelativeTo(null);
 		GridLayout gl = new GridLayout(3, 2, 10, 10);
