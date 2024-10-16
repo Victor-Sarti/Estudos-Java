@@ -46,4 +46,9 @@ public class Aluno {
 		return "ID = " + id + ", Nome = " + nome + ", Telefone = " + telefone + ", "
 				+ "Nota = " + nota;
 	}
+	
+	public void imprimirAluno() {
+		System.out.format("\n%-4d %-30s %-25s %,4.2f", 
+				getId(), getNome(), getTelefone(), getNota());
+	}
 }
