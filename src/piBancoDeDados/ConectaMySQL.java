@@ -20,7 +20,7 @@ public class ConectaMySQL {
 		try{
 			con = DriverManager.getConnection(url, username, password);
 			stmt = con.createStatement();
-//			System.out.println("\nConexÃ£o estabelecida com sucesso!\n");
+			System.out.println("\nConexÃ£o estabelecida com sucesso!\n");
 		}catch(Exception e){
 			System.out.println("\nNÃ£o foi possÃ­vel estabelecer conexÃ£o " + e + "\n");
 			System.exit(1);	}
