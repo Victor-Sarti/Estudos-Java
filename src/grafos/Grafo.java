@@ -13,7 +13,10 @@ public class Grafo <TIPO> {
 		this.arestas = arestas;
 	}
 	
-	
+	public void adicionarVertice( TIPO dado) {
+		Vertice<TIPO> novoVertice = new Vertice<TIPO>(dado);
+		this.vertices.add(novoVertice);
+	}
 	
 
 	
