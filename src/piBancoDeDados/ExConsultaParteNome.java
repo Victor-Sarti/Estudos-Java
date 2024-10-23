@@ -25,7 +25,7 @@ public class ExConsultaParteNome{
 			ps1.setString(1, (nome != null ? '%'+nome.trim()+'%' : ""));
 			ResultSet rs = ps1.executeQuery();
 			while(rs.next()) {
-				int id = rs.getInt("idalunos");
+				int id = rs.getInt("alunosid");
 				String nomeAluno = rs.getString("alunosNome");
 				double nota = rs.getDouble("alunosNota");
 				String telefone = rs.getString("alunosTelefone");
