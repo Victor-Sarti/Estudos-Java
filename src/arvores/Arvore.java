@@ -32,6 +32,7 @@ public class Arvore {
 		if (place.right != null) {
 			preOrder(place.right);
 		}
+	}
 
 	public void inOrder(No place) {
 		if (place.left != null) {
@@ -41,6 +42,16 @@ public class Arvore {
 		if (place.right != null) {
 			inOrder(place.right);
 		}
+	}
+	
+	public void postOrder(No place) {
+		if (place.left != null) {
+			postOrder(place.left);
+		}
+		if (place.right != null) {
+			postOrder(place.right);
+		}
+		System.out.println(" " +place.info);
 	}
 
 }
